@@ -1,0 +1,230 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  height:50px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color:lightgray;
+}
+header #burger_menu{
+  justify-self: flex-end;
+  padding:2%;
+  font-size: 25px;
+}
+header h2{
+  padding:5px;
+  margin-right:5px;
+}
+.hidden{
+  transition-duration: 2s;
+  opacity: 0;
+}
+@keyframes color-animation {
+  0% {
+     background-image:url('http://www.pngall.com/wp-content/uploads/2016/04/Github-PNG-Image.png');
+     background-position: center;
+     background-size: contain;
+     background-repeat:no-repeat;
+  }
+  50% {
+     background-image: url('https://sguru.org/wp-content/uploads/2018/02/linkedin-logo-hd-png-3.png');
+     background-position: center;
+     background-size: contain;
+     background-repeat:no-repeat;
+  } 
+  100% {
+     background-image: url('https://www.makdigitaldesign.com/wp-content/uploads/2016/03/email.png');
+     background-position: center;
+     background-size: contain;
+     background-repeat:no-repeat;
+  } 
+}
+figure{
+  display: flex;
+  justify-content: center;
+  height:300px;
+
+  animation: color-animation 10s infinite linear alternate;
+}
+#selector_buttons{
+  display: flex;
+  width:40%;
+  justify-content: space-evenly;
+  align-self: flex-end;
+  padding:4%;
+  margin-bottom:20px;
+}
+#selector_buttons i{
+  padding:5px;
+}
+
+.fas{
+  
+  color:rgb(33, 179, 247);
+}
+.unchecked{
+  
+  color:rgb(204, 204, 204);
+
+}
+article{
+  padding: 15px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 18px;
+}
+#firstphoto{
+  height: 200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(40, 189, 248);
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
+}
+#secondphoto{
+  height: 200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(40, 189, 248, 0.692);
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
+}
+#firstphoto:hover{
+  
+
+  opacity:.7 ;
+}
+#firstphoto_content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: bolder;
+}
+#burger_content a{
+  text-decoration: none;
+  padding: 15px;
+  color:black;
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+#burger_content a:hover{
+  color:white;
+  background-color: black;
+}
+#secondphoto:hover{
+  
+
+  opacity:.7 ;
+}
+#secondphoto_content:hover{
+  opacity: 1;
+}
+#x_mark{
+  
+  align-self: flex-end;
+  margin-right:15px;
+  
+  
+}
+.box:hover{
+  background-color: black;
+  color:white;
+}
+#x_mark:hover{
+  cursor: pointer;
+}
+#secondphoto_content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: bolder;
+}
+.opa{
+  opacity: .2;
+}
+section h3{
+  text-align:center;
+}
+footer{
+  
+  height: 60px;
+  background-color:lightgray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hidden2{
+  opacity: 0;
+}
+#footer_nav{
+  display: flex;
+  justify-content: space-evenly;
+  width:40%;
+  height:auto;
+}
+#landing{
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+#burger_content{
+  width: 100%;
+  height:400px;
+  position: absolute;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: gray;
+}
+.box{
+  height:60px;
+  background-color: lightgray;
+  
+  width: 100%;
+}
+#footer_nav>*:hover{
+  cursor: pointer;
+}
+#git {
+ 
+ height: 25px;
+}
+#linkedin{
+  
+  height: 25px;
+}
+#mail {
+ 
+ height: 25px;;
+}
+@media only screen and (max-width: 321px)  {
+  .hidden{
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 700px){
+  #firstphoto{
+    width: 700px;
+  }
+  #secondphoto{
+    width: 700px;
+  }
+}
