@@ -117,7 +117,19 @@ function handleBurger(){
   $('header').on('click','#x_mark',function(){
     console.log('test2');
     $('#landing').html('');
+  });
 
+  $('header').on('click','a',function(){
+      console.log('landing close hyper');
+      event.preventDefault();
+      linkLocation = this.href;
+      $("body").fadeOut(1000, redirectPage);
+      $("body").fadeIn(1000, redirectPage);
+      $('#landing').html('');
+    
+      function redirectPage() {
+        window.location = linkLocation;
+    }
 
   });
 }
@@ -133,6 +145,13 @@ function displayNav(){
 
 function handleShowcase(){
   $('#1circle').on('click',function(){
+
+    $('figure').animate({
+        opacity:0
+      },600,function(){
+        $('figure').css('background-image','url(https://sguru.org/wp-content/uploads/2018/02/linkedin-logo-hd-png-3.png)');
+      });
+
     if($('#1circle').hasClass('unchecked')===true){
       $('#1circle').toggleClass('unchecked')
     }
@@ -147,12 +166,24 @@ function handleShowcase(){
     }
     else {
     }
-    $('figure').css('background-color','black');
+    $('figure').animate({
+        opacity:1
+      },600,function(){
+       
+      });
+    
 
 
 
   });
   $('#2circle').on('click',function(){
+
+    $('figure').animate({
+        opacity:0
+      },600,function(){
+        $('figure').css('background-image','url(http://www.pngall.com/wp-content/uploads/2016/04/Github-PNG-Image.png)');
+      });
+
     if($('#2circle').hasClass('unchecked')===true){
       $('#2circle').toggleClass('unchecked')
     }
@@ -167,11 +198,22 @@ function handleShowcase(){
     }
     else {
     }
-      $('figure').css('background-color','green');
+    $('figure').animate({
+        opacity:1
+      },600,function(){
+       
+      });
+      
 
   });
 
   $('#3circle').on('click',function(){
+    $('figure').animate({
+        opacity:0
+      },600,function(){
+        $('figure').css('background-image','url(https://www.makdigitaldesign.com/wp-content/uploads/2016/03/email.png)');
+      });
+    
     if($('#3circle').hasClass('unchecked')===true){
       $('#3circle').toggleClass('unchecked')
     }
@@ -186,8 +228,13 @@ function handleShowcase(){
     }
     else {
     }
-      $('figure').css('background-color','blue');
-
+    $('figure').animate({
+        opacity:1
+      },600,function(){
+       
+      });
+    // $('figure').css('background-image','url(https://www.makdigitaldesign.com/wp-content/uploads/2016/03/email.png)');
+     
   });
 }
 
