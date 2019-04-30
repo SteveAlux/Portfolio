@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel='stylesheet' type="text/css" href='Portfolio.css'>
-    <meta name="description" content="Steve Velasco's portfolio site">
+    <meta name="description" content="Steve Velasco's  Full Stack Developer portfolio site">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -15,7 +15,12 @@
   </head>
   <body>
     <header>
-        <i class="fas fa-bars mobile" id='burger_menu'></i>
+        <i class="fas fa-bars mobile" id='burger_menu' ></i>
+        <ul id='nav_second_option' class='hidden7'>
+          <li><a href='#aboutme'>About Me</a></li>
+          <li><a href='#projects'>Projects</a></li>
+          <li><a href='#contact'>Contact</a></li>
+        </ul>
         <div id ='landing'></div>        
 
         <h2>[Steve Velasco]</h3>
@@ -44,19 +49,29 @@
         <h3 id='projects'>Projects</h3>
         <div id='firstphoto'>
           <span id='firstphoto_content' class='hidden'>
-            <h4>Name</h4>
-            <p>description</p>
-            <button>View</button>
+            <h4>Starwars Trivia; Enter the Force</h4>
+            
+            <button id='view_first' class="view_style">View</button>
           </span>
         </div>
+        <p class='photo_des'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo labore ducimus ipsa iste quia voluptas nemo similique. Pariatur facere, libero quos iure nesciunt rerum sunt cum totam numquam animi!</p>
+        <span class='photo_tech'><img src='https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png'>
+          <img src='https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/css-logo.png'>
+          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/946px-Javascript_badge.svg.png'>
+        </span>
         <div id='secondphoto'>
         <span id='secondphoto_content' class='hidden'>
-          <h4>Name</h4>
-          <p>description</p>
-          <button>View</button>
+          <h4>Buen Provecho The recipe for Healthy living</h4>
+          
+          <button id='view_second' class='view_style'>View</button>
         
         </span>
         </div>
+        <p class="photo_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ratione obcaecati voluptatem tempora incidunt praesentium culpa soluta? Vel soluta debitis cumque corrupti. Dolorem expedita vero ratione quasi doloribus ipsam dolorum.</p>
+        <span class='photo_tech'><img src='https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png'>
+          <img src='https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/css-logo.png'>
+          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/946px-Javascript_badge.svg.png'>
+        </span>
       </section>
     </main>
     <footer id='contact'>
