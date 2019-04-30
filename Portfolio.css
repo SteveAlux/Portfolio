@@ -43,11 +43,21 @@
        background-repeat:no-repeat;
     } 
   }
+  #view_first a{
+    text-decoration: none;
+    color:rgb(33, 179, 247);
+    padding:30px;
+  }
+#view_first a:hover{
+  color:black;
+}
+
   figure{
     display: flex;
     justify-content: center;
     height:300px;
     background-image: url('Starwars.png');
+  
     animation: color-animation 10s infinite linear alternate;
   }
   #selector_buttons{
@@ -133,7 +143,7 @@
   
   .view_style:hover{
     background-color: rgb(33, 179, 247);
-    color:white;
+    color:black;
   }
    h4{
      background-color: rgb(2, 2, 2);
