@@ -181,7 +181,7 @@ function handleShowcase(){
     $('figure').animate({
         opacity:0
       },600,function(){
-        $('figure').css('background-image','url(BuenProvecho.png)');
+        $('figure').css('background-image','url(https://i.pinimg.com/originals/dd/36/bb/dd36bbc5ef3450b724a93b87b64a2b59.jpg)');
       });
 
     if($('#2circle').hasClass('unchecked')===true){
