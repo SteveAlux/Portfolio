@@ -149,7 +149,7 @@ function handleShowcase(){
     $('figure').animate({
         opacity:0
       },600,function(){
-        $('figure').css('background-image','url(https://sguru.org/wp-content/uploads/2018/02/linkedin-logo-hd-png-3.png)');
+        $('figure').css('background-image','url(Starwars.png)');
       });
 
     if($('#1circle').hasClass('unchecked')===true){
@@ -181,7 +181,7 @@ function handleShowcase(){
     $('figure').animate({
         opacity:0
       },600,function(){
-        $('figure').css('background-image','url(http://www.pngall.com/wp-content/uploads/2016/04/Github-PNG-Image.png)');
+        $('figure').css('background-image','url(BuenProvecho.png)');
       });
 
     if($('#2circle').hasClass('unchecked')===true){
@@ -211,7 +211,7 @@ function handleShowcase(){
     $('figure').animate({
         opacity:0
       },600,function(){
-        $('figure').css('background-image','url(https://www.makdigitaldesign.com/wp-content/uploads/2016/03/email.png)');
+        $('figure').css('background-image','url(Coding.png)');
       });
     
     if($('#3circle').hasClass('unchecked')===true){
